@@ -1,0 +1,157 @@
+body
+    {
+        background: black;
+        color: whitesmoke;
+    }
+
+h1 
+    {
+        margin-top:80px;
+        transform: rotate(-10deg);
+        margin-bottom: 40px;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+h2 
+    {
+        font-style: italic;
+        line-height: 1.5;
+        font-size: 25px;
+        text-align: justify;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+h3 
+    {
+        line-height: 1.5;
+        font-size: 25px;
+        text-align: justify;
+        margin-left: 20px;
+        margin-right: 20px
+    }
+      
+
+.animated-word 
+    {
+        background-color: rgba(128, 128, 128, 0.6); /* Agrega un fondo transparente */
+        padding:2px 4px;
+        color: #FF8C00;
+        animation: colorAnimation 2s linear infinite alternate;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Agrega una sombra de texto */
+        border-radius: 10px;
+}
+
+@keyframes colorAnimation 
+    {
+        0% { color: black; }
+        50% { color: red; }
+        100% { color:#FFD700; }
+     }
+     .logo-container {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20vh; /* Ajusta la altura según tus necesidades */
+      }
+
+     .logo {
+        width: 200px; /* Ajusta el ancho según tus preferencias */
+        height: auto; /* Permite que la altura se ajuste proporcionalmente */
+        animation: pulse 5s infinite;
+        transform-origin: center;
+
+      }
+      
+      @keyframes pulse {
+        0% {
+          transform: scale(1); /* Tamaño normal del logo */
+        }
+        50% {
+          transform: scale(1.2); /* Escala aumentada del logo a la mitad de la animación */
+        }
+        100% {
+          transform: scale(1); /* Tamaño normal del logo al final de la animación */
+        }
+      }
+.container-texto {
+    font-family: fantasy;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("img/Salchichas2.jpeg");
+    background-size: cover;
+    background-position: center;
+    gap: 20px;
+}
+.verMenuContainer {
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+.verMenu {
+    display: inline-block;
+    background-color: #FF8C00;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+.fotosContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+.fotosContainer img {
+    width: 100%; /* Ajusta el tamaño de las imágenes al ancho del contenedor */
+    height: auto; /* Mantiene la proporción de aspecto */
+}
+.map-container {
+    height: 300px; /* Ajusta la altura según tus necesidades */
+    width: 100%; /* Ajusta el ancho según tus necesidades */
+  }
+
+@media only screen and (max-width: 600px) {
+    /* Estilos para dispositivos móviles */
+  
+    /* Ajusta el tamaño de la fuente para h1 */
+    h1 {
+      font-size: 30px;
+      text-align: center;
+    }
+  
+    /* Ajusta el tamaño de la fuente para h2 */
+    h2 {
+      font-size: 20px;
+    }
+  
+    /* Ajusta el tamaño de la fuente para h3 */
+    h3 {
+      font-size: 18px;
+    }
+  
+    /* Ajusta el tamaño del logo */
+    .logo {
+      width: 150px;
+    }
+  
+    /* Ajusta el tamaño de las imágenes en la galería */
+    .fotosContainer img {
+      width: 100%;
+    }
+    .fotosContainer {
+        display: flex;
+        flex-direction: column;
+    }
+  }
+  
